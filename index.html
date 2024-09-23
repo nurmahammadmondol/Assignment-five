@@ -13,9 +13,9 @@
 
 <body class="">
   <header class="fixed top-0 w-full z-50  backdrop-blur-lg pb-4 ">
-    <nav class="bg-[#FFF5F8] flex justify-around pt-5 pb-9 ">
+    <nav class="bg-[#FFF5F8] flex justify-around pt-5 pb-6 ">
       <div>
-        <button class="bg-[#D2F8A0] px-7 py-3 font-bold rounded-md">Blog</button>
+        <button id="blogBTN" class="bg-[#D2F8A0] px-7 py-3 font-bold rounded-md">Blog</button>
       </div>
       <div class="flex items-center gap-3">
         <img class="h-9 w-9" src="assets/logo.png" alt="">
@@ -23,7 +23,7 @@
       </div>
       <div class="flex items-center gap-2">
         <img src="assets/coin.png" alt="">
-        <h2 id="NavbarBtn" class="font-bold">5500</h2>
+        <h2 id="NavbarMoneyDetails" class="font-bold">5500</h2>
         <span>BTD</span>
       </div>
 
@@ -31,16 +31,16 @@
 
     <!-- 2 BUTTON  -->
     <div class="mt-8 flex justify-center gap-5">
-      <button class="btn  px-9 font-bold rounded-md">Donation</button>
-      <button class="btn   px-10 font-bold rounded-md">History</button>
+      <button id="DonationPartBTN" class="btn  px-9 font-bold rounded-md">Donation</button>
+      <button id="HistoryPartBTN" class="btn   px-10 font-bold rounded-md">History</button>
     </div>
   </header>
 
 
   <main class="mt-[230px] w-9/12 mx-auto">
 
-    <article class="my-12 grid grid-cols-1 gap-8">
-      <!-- part 1 -->
+    <article class="my-12 grid grid-cols-1 gap-10">
+      <!-- Card 1 -->
       <section class="h-[450px] w-full p-7 border rounded-xl grid grid-cols-2 gap-6">
         <!-- Image Container -->
         <div class="">
@@ -49,11 +49,11 @@
         <div class="flex flex-col justify-between">
           <div class=" flex items-center gap-2 w-3/12 bg-gray-100 p-1 rounded-md">
             <img src="assets/coin.png" alt="">
-            <h2 id="" class="font-semibold">0</h2>
+            <h2 id="Card1Money" class="font-semibold">3000</h2>
             <span>BTD</span>
           </div>
 
-          <h3 class="font-extrabold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <h3 id="Cart1title" class="font-extrabold">Donate for Flood at Noakhali, Bangladesh</h3>
 
           <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
             help provide
@@ -61,15 +61,16 @@
             difference. Please
             join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+          <input id="Card1InputMoney" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full " />
 
-          <button class="btn bg-[#D2F8A0] w-full font-bold rounded-md">Donate Now</button>
+          <button id="Card1DonateNowBTN" class="btn bg-[#D2F8A0] w-full font-bold rounded-md">Donate Now</button>
 
         </div>
 
       </section>
 
-      <!-- part 2 -->
+      <!-- Card 2 -->
       <section class="h-[450px] w-full p-7 border rounded-xl grid grid-cols-2 gap-6">
         <!-- Image Container -->
         <div class="h-[395px] w-full">
@@ -78,11 +79,11 @@
         <div class="flex flex-col justify-between">
           <div class=" flex items-center gap-2 w-3/12 bg-gray-100 p-1 rounded-md">
             <img src="assets/coin.png" alt="">
-            <h2 id="" class="font-semibold">600</h2>
+            <h2 id="Card2Money" class="font-semibold">600</h2>
             <span>BTD</span>
           </div>
 
-          <h3 class="font-extrabold">Donate for Flood Relief in Feni,Bangladesh</h3>
+          <h3 id="Cart2title" class="font-extrabold">Donate for Flood Relief in Feni,Bangladesh</h3>
 
           <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
             help provide
@@ -90,15 +91,16 @@
             difference. Please
             join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+          <input id="Card2InputMoney" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full " />
 
-          <button class="btn bg-[#D2F8A0] w-full font-bold rounded-md">Donate Now</button>
+          <button id="Card2DonateNowBTN" class="btn bg-[#D2F8A0] w-full font-bold rounded-md">Donate Now</button>
 
         </div>
 
       </section>
 
-      <!-- part 3 -->
+      <!-- Card 3 -->
       <section class="h-[450px] w-full p-7 border rounded-xl grid grid-cols-2 gap-6">
         <!-- Image Container -->
         <div class="h-[395px] w-full">
@@ -107,11 +109,11 @@
         <div class="flex flex-col justify-between">
           <div class=" flex items-center gap-2 w-3/12 bg-gray-100 p-1 rounded-md">
             <img src="assets/coin.png" alt="">
-            <h2 id="" class="font-semibold">2400</h2>
+            <h2 id="Card3Money" class="font-semibold">2400</h2>
             <span>BTD</span>
           </div>
 
-          <h3 class="font-extrabold">Aid for Injured in the Quota Movement</h3>
+          <h3 id="Card3title" class="font-extrabold">Aid for Injured in the Quota Movement</h3>
 
           <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
             help provide
@@ -119,9 +121,10 @@
             difference. Please
             join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+          <input id="Card3InputMoney" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full " />
 
-          <button class="btn bg-[#D2F8A0] w-full font-bold rounded-md">Donate Now</button>
+          <button id="Card3DonateNowBTN" class="btn bg-[#D2F8A0] w-full font-bold rounded-md">Donate Now</button>
 
         </div>
 
