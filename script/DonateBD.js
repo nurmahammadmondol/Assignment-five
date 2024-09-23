@@ -4,6 +4,7 @@ document
   .addEventListener('click', function () {
     const NavbarMoneyDetails = InnerTextFunction('NavbarMoneyDetails');
     const Card1Money = InnerTextFunction('Card1Money');
+    const Title = CardTitleFunction('Card1title');
     const Card1InputMoney = InputValueById('Card1InputMoney');
 
     const MinusNavbarMoneyCard1 = NavbarMoneyDetails - Card1InputMoney;
@@ -13,6 +14,24 @@ document
       document.getElementById('NavbarMoneyDetails').innerText =
         MinusNavbarMoneyCard1;
       document.getElementById('Card1Money').innerText = AddedCard1Money;
+
+      const historyNewFile = document.createElement('div');
+      historyNewFile.classList.add(
+        'border',
+        'w-full',
+        'p-5',
+        'my-5',
+        'rounded-lg'
+      );
+      const now = new Date();
+      const formattedTime = now.toString();
+
+      historyNewFile.innerHTML = `
+      <h1 class='font-extrabold text-xl mb-2'> ${Card1InputMoney} Taka is ${Title}</h1>
+      <p> Date : ${formattedTime}</p>
+      `;
+
+      document.getElementById('DonateHistoryList').appendChild(historyNewFile);
     } else {
       alert("Error ! You don't have this amount in your account");
     }
@@ -26,6 +45,7 @@ document
   .addEventListener('click', function () {
     const NavbarMoneyDetails = InnerTextFunction('NavbarMoneyDetails');
     const Card2Money = InnerTextFunction('Card2Money');
+    const Title = CardTitleFunction('Cart2title');
     const Card2InputMoney = InputValueById('Card2InputMoney');
 
     const MinusNavbarMoney = NavbarMoneyDetails - Card2InputMoney;
@@ -35,6 +55,26 @@ document
       document.getElementById('NavbarMoneyDetails').innerText =
         MinusNavbarMoney;
       document.getElementById('Card2Money').innerText = AddedCard2Money;
+
+      const historyCard2NewFile = document.createElement('div');
+      historyCard2NewFile.classList.add(
+        'border',
+        'w-full',
+        'p-5',
+        'my-5',
+        'rounded-lg'
+      );
+      const now = new Date();
+      const formattedTime = now.toString();
+
+      historyCard2NewFile.innerHTML = `
+      <h1 class='font-extrabold text-xl mb-2'> ${Card2InputMoney} Taka is ${Title}</h1>
+      <p> Date : ${formattedTime}</p>
+      `;
+
+      document
+        .getElementById('DonateHistoryList')
+        .appendChild(historyCard2NewFile);
     } else {
       alert("Error ! You don't have this amount in your account");
     }
@@ -42,12 +82,13 @@ document
 
 // ***************************************************************
 
-// Dom & Event Listener added Card-2
+// Dom & Event Listener added Card-3
 document
   .getElementById('Card3DonateNowBTN')
   .addEventListener('click', function () {
     const NavbarMoneyDetails = InnerTextFunction('NavbarMoneyDetails');
     const Card3Money = InnerTextFunction('Card3Money');
+    const Title = CardTitleFunction('Card3title');
     const Card3InputMoney = InputValueById('Card3InputMoney');
 
     const MinusNavbarMoney = NavbarMoneyDetails - Card3InputMoney;
@@ -57,7 +98,55 @@ document
       document.getElementById('NavbarMoneyDetails').innerText =
         MinusNavbarMoney;
       document.getElementById('Card3Money').innerText = AddedCard3Money;
+
+      const historyCard3NewFile = document.createElement('div');
+      historyCard3NewFile.classList.add(
+        'border',
+        'w-full',
+        'p-5',
+        'my-5',
+        'rounded-lg'
+      );
+      const now = new Date();
+      const formattedTime = now.toString();
+
+      historyCard3NewFile.innerHTML = `
+      <h1 class='font-extrabold text-xl mb-2'> ${Card3InputMoney} Taka is ${Title}</h1>
+      <p> Date : ${formattedTime}</p>
+      `;
+
+      document
+        .getElementById('DonateHistoryList')
+        .appendChild(historyCard3NewFile);
     } else {
       alert("Error ! You don't have this amount in your account");
     }
+  });
+
+// Button two
+document
+  .getElementById('DonationPartBTN')
+  .addEventListener('click', function () {
+    const DonationAllCartPart = UnhideItem('DonateAllCard');
+
+    // const BG_colorAdd = document
+    //   .getElementById('DonationPartBTN')
+    //   .classList.add('bg-red-500');
+    // const BG_ColorRemove = document
+    //   .getElementById('HistoryPartBTN')
+    //   .classList.add('bg-none');
+  });
+
+document
+  .getElementById('HistoryPartBTN')
+  .addEventListener('click', function () {
+    const DonationAllCartPart = UnhideItem('DonateHistory');
+    const Footer = document.getElementById('Footer').classList.add('hidden');
+
+    // const BG_colorAdd = document
+    //   .getElementById('HistoryPartBTN')
+    //   .classList.add('bg-red-500');
+    // const BG_ColorRemove = document
+    //   .getElementById('DonationPartBTN')
+    //   .classList.add('bg-none');
   });
