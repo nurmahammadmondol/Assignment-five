@@ -170,12 +170,12 @@ document
   .addEventListener('click', function () {
     const DonationAllCartPart = UnhideItem('DonateAllCard');
 
-    // const BG_colorAdd = document
-    //   .getElementById('DonationPartBTN')
-    //   .classList.add('bg-red-500');
-    // const BG_ColorRemove = document
-    //   .getElementById('HistoryPartBTN')
-    //   .classList.add('bg-none');
+    const BG_colorAdd = document
+      .getElementById('DonationPartBTN')
+      .classList.add('bg-[#D2F8A0]');
+    const BG_ColorRemove = document
+      .getElementById('HistoryPartBTN')
+      .classList.remove('bg-[#D2F8A0]');
   });
 
 document
@@ -184,12 +184,12 @@ document
     const DonationAllCartPart = UnhideItem('DonateHistory');
     const Footer = document.getElementById('Footer').classList.add('hidden');
 
-    // const BG_colorAdd = document
-    //   .getElementById('HistoryPartBTN')
-    //   .classList.add('bg-red-500');
-    // const BG_ColorRemove = document
-    //   .getElementById('DonationPartBTN')
-    //   .classList.add('bg-none');
+    const BG_ColorRemove = document
+      .getElementById('DonationPartBTN')
+      .classList.remove('bg-[#D2F8A0]');
+    const BG_colorAdd = document
+      .getElementById('HistoryPartBTN')
+      .classList.add('bg-[#D2F8A0]');
   });
 
 // **************************************************************************
