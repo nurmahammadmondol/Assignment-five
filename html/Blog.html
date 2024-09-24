@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog || Donate Bangladesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="bg-[#F1ECE2] flex justify-around pt-4 pb-5  ">
+      <div>
+        <button id="BackHomeBTN" class="bg-[#D2F8A0] px-3 lg:px-7 py-1 lg:py-3 font-bold rounded-md">Home</button>
+      </div>
+      <div class="flex items-center gap-3">
+        <img class="h-6 lg:h-9 w-6 lg:w-9" src="../assets/logo.png" alt="">
+        <h2 class="lg:font-bold">Donate Bangladesh</h2>
+      </div>
+      <div class="flex items-center lg:gap-2">
+        <img src="../assets/coin.png" alt="">
+        <h2 id="NavbarMoneyDetails" class="font-bold">5500</h2>
+        <span>BTD</span>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="mt-20 w-11/12 lg:w-10/12 mx-auto">
+    <div>
+      <h1 class="text-3xl lg:text-5xl font-bold flex items-center gap-5">Important FAQ
+        <i class="fa-solid fa-circle-question fa-bounce"></i>
+      </h1>
+
+      <!-- Collapse Part start-->
+      <div class="mt-8  ">
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border-2 py-5">
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+          <div class="collapse-content">
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure
+              of an HTML or
+              XML document as a tree of objects, where each object corresponds to a part of the document (like elements,
+              attributes,
+              or text content). With the DOM, you can programmatically access and manipulate the content, structure, and
+              style of a
+              web page using JavaScript.</p>
+          </div>
+        </div>
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border-2 py-5">
+          <div class="collapse-title text-xl font-medium">How do you Select an element from the DOM ?</div>
+          <div class="collapse-content">
+            <p>In JavaScript, you can select an element from the DOM using various methods. The most commonly used
+              methods are: <br>
+
+
+              Summary: <br>
+              By ID: document.getElementById("id") <br>
+              By Class: document.getElementsByClassName("class")<br>
+              By Tag: document.getElementsByTagName("tag")<br>
+              By CSS Selector: document.querySelector("selector") (single match) or
+              document.querySelectorAll("selector") (multiple
+              matches)
+              You can use these methods to select and manipulate elements dynamically in a webpage.
+            </p>
+          </div>
+
+        </div>
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border-2 py-5">
+          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is
+            it useful ?</div>
+          <div class="collapse-content">
+            <p>Event delegation is a technique in JavaScript where instead of attaching event listeners to individual
+              child elements,
+              you attach a single event listener to a parent element. This parent element can handle events triggered by
+              its children
+              because of event bubbling, where events triggered on a child element bubble up to its parent elements in
+              the DOM
+              hierarchy. <br>
+
+              How Event Delegation Works:
+              When an event (like a click) occurs on a child element, it bubbles up through its parent elements in the
+              DOM tree until
+              it reaches the root (<html>). Using event delegation, we attach a listener to a common parent element.
+              This way, we can
+              manage events for multiple child elements using a single event listener.</p>
+          </div>
+        </div>
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border-2 py-5">
+          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using
+            the DOM ?</div>
+          <div class="collapse-content">
+            <p>Attributes are manipulated using setAttribute(), getAttribute(), and direct property access.
+              Styles can be changed directly using style properties or by manipulating CSS classes with classList.
+              Using classes for styles is often cleaner and more maintainable compared to setting inline styles
+              directly.
+              This flexibility allows you to dynamically adjust the appearance and behavior of elements on a web page in
+              response to
+              user actions or other events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="../script/AllFunction.js"></script>
+  <script src="../script/DonateBD.js"></script>
+  <script src="../script/Blog.js"></script>
+
+</body>
+
+</html>

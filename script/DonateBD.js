@@ -1,3 +1,8 @@
+// Blog Button
+document.getElementById('blogBTN').addEventListener('click', function () {
+  window.location.href = 'html/Blog.html';
+});
+
 // Dom & Event Listener added Card-1
 document
   .getElementById('Card1DonateNowBTN')
@@ -14,6 +19,8 @@ document
       document.getElementById('NavbarMoneyDetails').innerText =
         MinusNavbarMoneyCard1;
       document.getElementById('Card1Money').innerText = AddedCard1Money;
+
+      const Model = document.getElementById('my_modal_5');
 
       const historyNewFile = document.createElement('div');
       historyNewFile.classList.add(

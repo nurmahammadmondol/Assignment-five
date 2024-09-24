@@ -13,15 +13,15 @@
 
 <body class="">
   <header class="fixed top-0 w-full z-50  backdrop-blur-lg pb-4 ">
-    <nav class="bg-[#FFF5F8] flex justify-around pt-4 pb-5 ">
+    <nav class="bg-[#F1ECE2] flex justify-around pt-4 pb-5 ">
       <div>
-        <button id="blogBTN" class="bg-[#D2F8A0] px-7 py-3 font-bold rounded-md">Blog</button>
+        <button id="blogBTN" class="bg-[#D2F8A0] px-3 lg:px-8 py-1 lg:py-3 font-bold rounded-md">Blog</button>
       </div>
       <div class="flex items-center gap-3">
-        <img class="h-9 w-9" src="assets/logo.png" alt="">
-        <h2 class="font-bold">Donate Bangladesh</h2>
+        <img class="h-6 lg:h-9 w-6 lg:w-9" src="assets/logo.png" alt="">
+        <h2 class="lg:font-bold">Donate Bangladesh</h2>
       </div>
-      <div class="flex items-center gap-2">
+      <div class="flex items-center lg:gap-2">
         <img src="assets/coin.png" alt="">
         <h2 id="NavbarMoneyDetails" class="font-bold">5500</h2>
         <span>BTD</span>
@@ -37,17 +37,17 @@
   </header>
 
 
-  <main class="mt-[230px] w-9/12 mx-auto ">
+  <main class="mt-[230px] w-11/12 lg:w-9/12 mx-auto ">
 
-    <article id="DonateAllCard" class=" my-10 grid grid-cols-1 gap-10">
+    <article id="DonateAllCard" class=" my-10 grid grid-cols-1 gap-10 ">
       <!-- Card 1 -->
-      <section class="h-[450px] w-full p-7 border rounded-xl grid grid-cols-2 gap-6">
+      <section class="h-full lg:h-[450px] w-full p-3 lg:p-7 border rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Image Container -->
         <div class="">
           <img class="h-full w-full" src="assets/noakhali.png" alt="">
         </div>
-        <div class="flex flex-col justify-between">
-          <div class=" flex items-center gap-2 w-3/12 bg-gray-100 p-1 rounded-md">
+        <div class="flex flex-col justify-between gap-3 lg:gap-0">
+          <div class=" flex items-center gap-2 w-2/4 lg:w-3/12 bg-gray-100 p-1 rounded-md">
             <img src="assets/coin.png" alt="">
             <h2 id="Card1Money" class="font-semibold">3000</h2>
             <span>BTD</span>
@@ -71,13 +71,13 @@
       </section>
 
       <!-- Card 2 -->
-      <section class="h-[450px] w-full p-7 border rounded-xl grid grid-cols-2 gap-6">
+      <section class="h-full lg:h-[450px] w-full p-3 lg:p-7 border rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Image Container -->
-        <div class="h-[395px] w-full">
+        <div class="h-full lg:h-[395px] w-full">
           <img class="h-full w-full" src="assets/feni.png" alt="">
         </div>
-        <div class="flex flex-col justify-between">
-          <div class=" flex items-center gap-2 w-3/12 bg-gray-100 p-1 rounded-md">
+        <div class="flex flex-col justify-between gap-3 lg:gap-0">
+          <div class=" flex items-center gap-2 w-2/4 lg:w-3/12 bg-gray-100 p-1 rounded-md">
             <img src="assets/coin.png" alt="">
             <h2 id="Card2Money" class="font-semibold">600</h2>
             <span>BTD</span>
@@ -101,13 +101,13 @@
       </section>
 
       <!-- Card 3 -->
-      <section class="h-[450px] w-full p-7 border rounded-xl grid grid-cols-2 gap-6">
+      <section class="h-full lg:h-[450px] w-full p-3 lg:p-7 border rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Image Container -->
-        <div class="h-[395px] w-full">
+        <div class="h-full lg:h-[395px] w-full">
           <img class="h-full w-full" src="assets/quota-protest.png" alt="">
         </div>
-        <div class="flex flex-col justify-between">
-          <div class=" flex items-center gap-2 w-3/12 bg-gray-100 p-1 rounded-md">
+        <div class="flex flex-col justify-between gap-3 lg:gap-0">
+          <div class=" flex items-center gap-2 w-2/4 lg:w-3/12 bg-gray-100 p-1 rounded-md">
             <img src="assets/coin.png" alt="">
             <h2 id="Card3Money" class="font-semibold">2400</h2>
             <span>BTD</span>
@@ -140,6 +140,26 @@
 
     </article>
 
+    <article>
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box flex flex-col items-center">
+          <h3 class="text-4xl font-bold">Congrates!</h3>
+          <img class="h-8 w-9 my-4 " src="assets/coin.png" alt="">
+          <p class="py-3">You Have Donated for Humankind</p>
+          <h6 class="text-xl font-bold">Successfully</h6>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+    </article>
+
   </main>
 
   <footer id="Footer" class="bg-[#F9F7F3] h-20 w-full">
@@ -147,6 +167,7 @@
 
   <script src="script/AllFunction.js"></script>
   <script src="script/DonateBD.js"></script>
+
 </body>
 
 </html>
