@@ -44,6 +44,17 @@ document
     }
   });
 
+// Model Card 1
+function ModelOne() {
+  const NavbarMoneyDetails = InnerTextFunction('NavbarMoneyDetails');
+  const Card1Money = InnerTextFunction('Card1Money');
+  const Card1InputMoney = InputValueById('Card1InputMoney');
+  const OutputAddNumber = Card1Money + Card1InputMoney;
+
+  if (OutputAddNumber > Card1Money && Card1InputMoney <= NavbarMoneyDetails) {
+    document.getElementById('my_modal_5').showModal();
+  }
+}
 // ***************************************************************
 
 // Dom & Event Listener added Card-2
@@ -87,6 +98,17 @@ document
     }
   });
 
+// Model Card 2
+function ModelTwo() {
+  const NavbarMoneyDetails = InnerTextFunction('NavbarMoneyDetails');
+  const Card2Money = InnerTextFunction('Card2Money');
+  const Card2InputMoney = InputValueById('Card2InputMoney');
+  const Output2AddNumber = Card2Money + Card2InputMoney;
+
+  if (Output2AddNumber > Card2Money && Card2InputMoney <= NavbarMoneyDetails) {
+    document.getElementById('my_modal_5').showModal();
+  }
+}
 // ***************************************************************
 
 // Dom & Event Listener added Card-3
@@ -130,7 +152,19 @@ document
     }
   });
 
-// Button two
+// Model Card 3
+function ModelThree() {
+  const NavbarMoneyDetails = InnerTextFunction('NavbarMoneyDetails');
+  const Card3Money = InnerTextFunction('Card3Money');
+  const Card3InputMoney = InputValueById('Card3InputMoney');
+  const OutputAddNumber = Card3Money + Card3InputMoney;
+
+  if (OutputAddNumber > Card3Money && Card3InputMoney <= NavbarMoneyDetails) {
+    document.getElementById('my_modal_5').showModal();
+  }
+}
+
+// Two Button
 document
   .getElementById('DonationPartBTN')
   .addEventListener('click', function () {
@@ -157,3 +191,7 @@ document
     //   .getElementById('DonationPartBTN')
     //   .classList.add('bg-none');
   });
+
+// **************************************************************************
+
+// **************************************************************************

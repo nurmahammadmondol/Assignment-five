@@ -11,17 +11,17 @@ function CardTitleFunction(title) {
   return Title;
 }
 
-// function addTime(Time) {
-//   const timeElement = document.getElementById(Time);
-//   const now = new Date();
+// Time Add
+function addTime(Time) {
+  const timeElement = document.getElementById(Time);
+  const now = new Date();
 
-//   const formattedTime = now.toString();
+  const formattedTime = now.toString();
 
-//   timeElement.innerText = `Date : ${formattedTime}`;
-// }
+  timeElement.innerText = `Date : ${formattedTime}`;
+}
 
 // Input Text Function //
-
 function InputValueById(InputField) {
   const InputNumber = document.getElementById(InputField).value;
   const ChangeInNumberToInputNumber = parseFloat(InputNumber);
